@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_60"/>
+	<classpathentry kind="lib" path="D:/EclipseWorkSpace/GraphPoemConcordance/lib/edu.mit.jwi_2.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/EclipseWorkSpace/GraphPoemConcordance/lib/lucene-analyzers-common-5.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/EclipseWorkSpace/GraphPoemConcordance/lib/lucene-core-5.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/EclipseWorkSpace/GraphPoemConcordance/lib/lucene-queryparser-5.5.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
