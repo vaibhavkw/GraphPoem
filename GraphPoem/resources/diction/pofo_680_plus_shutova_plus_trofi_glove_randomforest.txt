@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     pofo680plusshutovaglove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1
+Instances:    4870
+Attributes:   35
+              conceptOverlap
+              similarity
+              dim1
+              dim3
+              dim6
+              dim7
+              dim8
+              dim9
+              dim10
+              dim11
+              dim20
+              dim22
+              dim24
+              dim30
+              dim32
+              dim36
+              dim43
+              dim44
+              dim45
+              dim46
+              dim52
+              dim55
+              dim59
+              dim62
+              dim64
+              dim70
+              dim73
+              dim78
+              dim79
+              dim83
+              dim85
+              dim91
+              dim93
+              dim96
+              metaphor
+Test mode:    split 90.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 9.06 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         359               73.7166 %
+Incorrectly Classified Instances       128               26.2834 %
+Kappa statistic                          0.4566
+Mean absolute error                      0.3697
+Root mean squared error                  0.4196
+Relative absolute error                 75.1652 %
+Root relative squared error             84.6262 %
+Total Number of Instances              487     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.627    0.178    0.731      0.627    0.675      0.460    0.817     0.771     0
+                 0.822    0.373    0.741      0.822    0.779      0.460    0.817     0.863     1
+Weighted Avg.    0.737    0.288    0.737      0.737    0.734      0.460    0.817     0.823     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133  79 |   a = 0
+  49 226 |   b = 1
+
