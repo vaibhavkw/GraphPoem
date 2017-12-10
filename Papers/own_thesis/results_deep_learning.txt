@@ -1,0 +1,53 @@
+pofo_680_plus_shutova_plus_trofi_glove.csv
+202, input_dim=102, activation='relu'
+
+epochs=200, batch_size=5
+Baseline: 76.59% (0.00%)
+(array([ 0.69849246,  0.8125    ]), array([ 0.72020725,  0.79591837]), array([ 0.70918367,  0.80412371]), array([193, 294], dtype=int64))
+(array([ 0.8125]), array([ 0.79591837]), array([ 0.80412371]), array([294], dtype=int64))
+--- 225.7229540348053 seconds ---
+
+
+epochs=200, batch_size=50
+Baseline: 77.82% (0.00%)
+(array([ 0.72727273,  0.81      ]), array([ 0.70466321,  0.82653061]), array([ 0.71578947,  0.81818182]), array([193, 294], dtype=int64))
+(array([ 0.81]), array([ 0.82653061]), array([ 0.81818182]), array([294], dtype=int64))
+--- 28.361620664596558 seconds ---
+
+
+epochs=100, batch_size=150
+Baseline: 77.82% (0.00%)
+(array([ 0.73224044,  0.80592105]), array([ 0.69430052,  0.83333333]), array([ 0.71276596,  0.81939799]), array([193, 294], dtype=int64))
+(array([ 0.80592105]), array([ 0.83333333]), array([ 0.81939799]), array([294], dtype=int64))
+--- 7.144423723220825 seconds ---
+
+epochs=100, batch_size=70
+Baseline: 79.06% (0.00%)
+(array([ 0.75418994,  0.81168831]), array([ 0.69948187,  0.85034014]), array([ 0.72580645,  0.83056478]), array([193, 294], dtype=int64))
+(array([ 0.81168831]), array([ 0.85034014]), array([ 0.83056478]), array([294], dtype=int64))
+--- 9.978523015975952 seconds ---
+
+pofo_680_plus_shutova_plus_trofi_glove2.csv
+206, input_dim=103, activation='relu'
+epochs=100, batch_size=70
+Baseline: 79.47% (0.00%)
+(array([ 0.7486631 ,  0.82333333]), array([ 0.7253886 ,  0.84013605]), array([ 0.73684211,  0.83164983]), array([193, 294], dtype=int64))
+(array([ 0.82333333]), array([ 0.84013605]), array([ 0.83164983]), array([294], dtype=int64))
+--- 10.060170650482178 seconds ---
+
+epochs=250, batch_size=70
+Baseline: 79.67% (0.00%)
+(array([ 0.73737374,  0.83737024]), array([ 0.75647668,  0.82312925]), array([ 0.74680307,  0.83018868]), array([193, 294], dtype=int64))
+(0.78737198979413514, 0.78980296781925208, 0.78849587414949573, None)
+--- 23.825905084609985 seconds ---
+
+
+epochs=300, batch_size=70
+Baseline: 79.88% (0.00%)
+(array([ 0.7486911 ,  0.83108108]), array([ 0.74093264,  0.83673469]), array([ 0.74479167,  0.83389831]), array([193, 294], dtype=int64))
+(0.78988609027876033, 0.78883366818229883, 0.78934498587570623, None)
+--- 28.476637601852417 seconds ---
+
+
+
+

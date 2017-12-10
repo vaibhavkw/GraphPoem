@@ -1,0 +1,249 @@
+========================================================================
+Plaintext Review Forms - Instructions
+========================================================================
+
+Please complete your review using the following guidelines for the 
+scored categories.
+
+Appropriateness (1-5)
+---------------------
+
+Does this paper fit in EMNLP?
+
+5 = Appropriate for EMNLP. (most submissions)
+4 = NLP, though not typical EMNLP material.
+3 = Possibly relevant to the audience, though it's not quite NLP.
+2 = Only marginally relevant.
+1 = Inappropriate.
+
+Clarity (1-5)
+-------------
+
+For a reasonably well-prepared reader, is it clear what was done and why?
+Is the paper well-written and well-structured?
+
+5 = Very clear.
+4 = Understandable by most readers.
+3 = Mostly understandable with some effort.
+2 = Important questions were hard to resolve even with effort.
+1 = Much of the paper is confusing.
+
+Originality (1-5)
+-----------------
+
+How original is the approach or problem presented in this paper? Does this
+paper break new ground in topic, methodology, or insight? A paper can score
+high for originality even if the results did not show a convincing benefit.
+
+5 = Innovative: Highly original and significant new research topic,
+technique, methodology, or insight.
+4 = Creative: An intriguing problem, technique, or approach that is
+substantially different from previous research.
+3 = Respectable: A nice research contribution that represents a notable
+extension of prior approaches or methodologies.
+2 = Uninspiring: Obvious, or a minor improvement on familiar techniques.
+1 = Significant portions have actually been done before or done better.
+
+Soundness / Correctness (1-5)
+-----------------------------
+
+Is the technical approach sound and well-chosen? Can one trust the claims
+of the paper -- are they supported by proofs or proper experiments where
+the results of the experiments are correctly interpreted?
+
+5 = The approach is sound, and the claims are convincingly supported.
+4 = Generally solid, but there are some aspects of the approach or
+evaluation I am not sure about.
+3 = Fairly reasonable, but the main claims cannot be accepted based on the
+material provided.
+2 = Troublesome. Some interesting ideas, but the work needs better
+justification or evaluation.
+1 = Fatally flawed.
+
+Meaningful Comparison (1-5)
+---------------------------
+
+Do the authors place their work well with respect to existing literature?
+Are the references adequate? Are any experimental results meaningfully
+compared with appropriate prior approaches or other baselines?
+
+If you feel references are inadequate be sure to include the relevant
+references in your comments.
+
+5 = Comparison to prior work is superbly carried out given the space
+constraints.
+4 = Comparisons are mostly solid, but there are some missing references.
+3 = Comparisons are weak, very hard to determine how it compares to
+previous work.
+2 = Only partial awareness or understanding of related work, or a flawed
+empirical comparison.
+1 = Little awareness of related work, or lacks necessary empirical
+comparison.
+
+Substance (1-5)
+---------------
+
+Does this paper have enough substance, or would it benefit from more ideas
+or results? Note that this question mainly concerns the amount of work;
+quality is evaluated in other categories.
+
+5 = Contains more ideas or results than most publications of this length at
+EMNLP.
+4 = Represents an appropriate amount of content for a EMNLP paper of this
+length (most submissions).
+3 = Leaves open one or two natural questions that should have been pursued
+within the paper.
+2 = Work in progress. There are enough good ideas, but perhaps not enough
+results yet.
+1 = Seems thin. Not enough ideas here.
+
+Impact of Ideas / Results (1-5)
+-------------------------------
+
+How significant is the work described? If the ideas are novel, will they
+also be useful or inspirational? If the results are sound, are they also
+important?
+
+5 = Will have a significant impact on the field.
+4 = Some of the ideas or results will substantially help ongoing research.
+3 = Interesting but not too influential: a minor contribution that will be
+used mainly for comparison.
+2 = Marginally interesting. Probably will not be read or used.
+1 = Will have no impact on the field.
+
+Impact of Accompanying Software
+(1-5)
+-------------------------------------
+
+If software was submitted or released along with the paper, what is the
+expected impact of the software package? Will this software be valuable to
+others? Does it fill an unmet need? Is it at least sufficient to replicate
+or better understand the research in the paper?
+
+5 = Enabling: The newly released software should affect other people's
+choice of research or development projects to undertake.
+4 = Useful: I would recommend the new software to other researchers or
+developers for their ongoing work.
+3 = Potentially useful: Someone might find the new software useful for
+their work.
+2 = Documentary: The new software useful to study or replicate the reported
+research, although for other purposes they may have limited interest or
+limited usability. (Still a positive rating)
+1 = No usable software released.
+
+Impact of Accompanying Dataset / Resource
+(1-5)
+-----------------------------------------------
+
+If a dataset was submitted or released along with the paper, what is the
+expected impact of the dataset? Will this dataset be valuable to others in
+the form in which it is released? Does it fill an unmet need?
+
+5 = Enabling: The newly released datasets should affect other people's
+choice of research or development projects to undertake.
+4 = Useful: I would recommend the new datasets to other researchers or
+developers for their ongoing work.
+3 = Potentially useful: Someone might find the new datasets useful for
+their work.
+2 = Documentary: The new datasets are useful to study or replicate the
+reported research, although for other purposes they may have limited
+interest or limited usability. (Still a positive rating)
+1 = No usable datasets submitted.
+
+Recommendation (1-5)
+--------------------
+
+There are many good submissions to EMNLP 2017; how important is it to
+feature this one? Will people learn a lot by reading this paper or seeing
+it presented?
+
+In deciding on your ultimate recommendation, please think over all your
+scores above. But remember that no paper is perfect, and remember that we
+want a conference full of interesting, diverse, and timely work. If a paper
+has some weaknesses, but you really got a lot out of it, feel free to fight
+for it. If a paper is solid but you could live without it, let us know that
+you would rather not see it in the conference. Remember also that the
+author has about 3 weeks to address reviewer comments before the
+camera-ready deadline.
+
+Please do take the length of the submission into account. Rank short
+submissions relative to other short submissions, and full-length
+submissions relative to other full-length submissions. Acceptable short
+submissions include small, focused contributions; works in progress;
+negative results and interesting application notes.
+
+5 = Exciting: I would fight for this paper to be accepted.
+4 = Strong: I would like to see it accepted.
+3 = Borderline: It has some merits but also some serious problems. I'm
+ambivalent about this one.
+2 = Mediocre: I would rather not see it in the conference.
+1 = Poor: I would fight to have it rejected.
+
+Reviewer Confidence (1-5)
+-------------------------
+
+5 = Positive that my evaluation is correct. I read the paper very carefully
+and I am very familiar with related work.
+4 = Quite sure. I tried to check the important points carefully. It's
+unlikely, though conceivable, that I missed something that should affect my
+ratings.
+3 = Pretty sure, but there's a chance I missed something. Although I have a
+good feel for this area in general, I did not carefully check the paper's
+details, e.g., the math, experimental design, or novelty.
+2 = Willing to defend my evaluation, but it is fairly likely that I missed
+some details, didn't understand some central points, or can't be sure about
+the novelty of the work.
+1 = Not my area, or paper was hard for me to understand. My evaluation is
+just an educated guess.
+
+Presentation Format
+-------------------
+
+Papers at EMNLP can be presented either as poster or as oral presentation,
+depending on what is most likely to be beneficial to convey its ideas to
+its audience. If this paper were selected for presentation, which form of
+presentation would you find more appropriate?
+
+Note that the decisions as to which papers will be presented orally and
+which as poster presentations will be based on the nature rather than on
+the quality of the work. There will be no distinction in the proceedings
+between papers presented orally and those presented as poster
+presentations.
+
+
+FORMATTING GUIDELINES
+---------------------
+
+Enter only plain ASCII text on these forms.  Use a text editor which 
+can handle files in plain ASCII, without adding hidden formatting 
+characters.  
+
+Do not let the text automatically "wrap" around over an 80-column
+viewing area.  Rather, make sure you insert a linefeed at the end of
+each line.
+
+Paragraphs should be separated by two linefeeds (like the text in 
+these instructions).
+
+Remember that your textual comments will also be presented in HTML
+form.  START will attempt to preserve the "flow" of your original
+ASCII content in HTML (e.g., to preserve itemized lists, enumeration,
+etc.).  But the narrative sections will be filled, i.e., the content
+will be resized to fit the browser window.
+
+That said, you may want to include multi-line formulas, tables, or
+matrices in your review - where the alignment and spacing of the data
+needs to be preserved as entered, even when rendered in HTML.  To
+accomplish this, you can include "<pre>" contexts in your textual
+comments, in which case the enclosed data will be displayed as it was
+entered.  For example:
+
+   <pre>
+   7   5  11
+   0   0   1
+   1   0   1                   
+   </pre>
+
+If you do use this feature, do not forget the closing "</pre>" tag, 
+at the end of the pre-formatted text. And in general, only use 
+<pre>-style formatting when it's absolutely necessary to do so.

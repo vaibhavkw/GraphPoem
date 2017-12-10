@@ -1,0 +1,160 @@
+========================================================================
+Review Form - Submission #73
+=======================================DZE3CTX9=73======================
+
+Title: Neural Architectures for Detecting Metaphorical
+       Phrases  
+
+Submission Type: Short Paper  
+
+-------------------------------------------------------------------------
+SECONDARY REVIEWER
+-------------------------------------------------------------------------
+
+If you used a secondary reviewer to help with this review, and you wish 
+to give credit to this person, enter his/her name after the colon (:) sign 
+below.  If no secondary reviewer was used, leave the field blank.  
+
+  Secondary Reviewer: Vaibhav Kesarwani
+
+                                         =7XD3914=SecondaryRev===========
+
+
+-------------------------------------------------------------------------
+SCORED EVALUATION
+-------------------------------------------------------------------------
+
+
+
+     ====================================================================
+     To what extent is the paper relevant to the conference?
+     =================================================9YEDC25=S=1========
+
+     Insert your evaluation directly following the colon (:) sign. 
+     Please select an INTEGER (whole-number) score from within the 
+     range specified. 
+
+     The form has been initialized with the minimum score as a default.
+     Replace this default with your own evaluation.
+
+     To what extent is the paper relevant to the conference? (1 - 4): 4
+
+     =7XD3914=S=1
+
+     ====================================================================
+     Originality of the work (1-4)
+     =================================================9YEDC25=S=2========
+
+     Originality of the work (1-4) (1 - 4): 3
+
+     =7XD3914=S=2
+
+     ====================================================================
+     Technical accuracy (1-4)
+     =================================================9YEDC25=S=3========
+
+     Technical accuracy (1-4) (1 - 4): 3
+
+     =7XD3914=S=3
+
+     ====================================================================
+     Reference to previous/related research (1-5)
+     =================================================9YEDC25=S=4========
+
+     Reference to previous/related research (1-5) (1 - 5): 2
+
+     =7XD3914=S=4
+
+     ====================================================================
+     Presentation (clarity of aims and ideas and overall organisation) (1-3)
+     =================================================9YEDC25=S=5========
+
+     Presentation (clarity of aims and ideas and overall organisation) (1-3) (1 - 3): 3
+
+     =7XD3914=S=5
+
+     ====================================================================
+     English (1-3)
+     =================================================9YEDC25=S=6========
+
+     English (1-3) (1 - 3): 3
+
+     =7XD3914=S=6
+
+     ====================================================================
+     Acceptance (1-6)
+     =================================================9YEDC25=S=7========
+
+     Acceptance (1-6) (1 - 6): 4
+
+     =7XD3914=S=7
+
+     ====================================================================
+     Confidence (1-4)
+     =================================================9YEDC25=S=8========
+
+     Confidence (1-4) (1 - 4): 4
+
+     =7XD3914=S=8
+
+     ====================================================================
+     Recommend this paper for the "Outstanding young reseacher" award (1-3)
+     =================================================9YEDC25=S=9========
+
+     Recommend this paper for the "Outstanding young reseacher" award (1-3) (1 - 3): 2
+
+     =7XD3914=S=9
+
+-------------------------------------------------------------------------
+DETAILED COMMENTS
+-------------------------------------------------------------------------
+
+Please supply detailed comments to back up your rankings. These comments 
+will be forwarded to the authors of the submission.
+
+Enter your comments after the "Start" boundary line. Use as many lines
+as you need, but make sure that the "End" boundary marker directly follows 
+the last line of your detailed comments.
+
+=Start==============================================9YEDC25=comments=====
+The use of a third tag "B" to denote both literal and metaphoric phrase is really good. 
+The implementation of multiplicative and concatenative models by Baroni et al. is nicely done. The use of multiplicative model 
+for metaphor task does not make much sense (and that shows in results as well). Concatenative model obviously gives good results. 
+You can try applying other models for phrase compositionality as well. 
+Proper citations not done (like in case of WordNet & in some other places). 
+It is surprising that you have not cited Turney et al. for Abstract-Concrete rule. The abstract-concrete observation that you 
+make in section 4.1 & 4.2 is not new and observed by multiple authors in the past. You should cite them as well.  
+It would be better if Table 1 contained L or literal phrase analysis in comparison to M & B as well. 
+Tables 1 & 2 do not make much sense without literal phrase analysis.
+For results, it would be better if you also report precision, recall & f-score for L, M & B classes, because your dataset is so unbalanced.
+You did not explain D1 & D2 models.
+You have not reported how much agreement was observed between the two annotators before final data was prepared.
+=End================================================7XD3914=comments=====
+
+
+
+
+-------------------------------------------------------------------------
+CONFIDENTIAL COMMENTS FOR COMMITTEE
+-------------------------------------------------------------------------
+
+You may wish to withhold some comments from the authors, and include 
+them solely for the committee's internal use.  You may enter your
+confidential comments in the area below (using as many lines as you
+need). If you don't have confidential comments for this submission,
+leave the area blank.
+
+
+=Start==========================================9YEDC25=confComments=====
+
+
+
+
+=End============================================7XD3914=confComments=====
+
+
+
+
+========================================================================
+End Review Form - Submission #73
+=======================================CX39VB8D=73======================

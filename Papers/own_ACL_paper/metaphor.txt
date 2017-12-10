@@ -1,0 +1,518 @@
+%
+% File acl2015.tex
+%
+% Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn
+%%
+%% Based on the style files for ACL-2014, which were, in turn,
+%% Based on the style files for ACL-2013, which were, in turn,
+%% Based on the style files for ACL-2012, which were, in turn,
+%% based on the style files for ACL-2011, which were, in turn, 
+%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith 
+
+\documentclass[11pt]{article}
+\usepackage{acl2015}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{tikz-dependency}
+
+%\newenvironment{packeditem}
+%{\begin{itemize}[leftmargin=5mm]
+%\setlength{\itemsep}{1pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}}
+%\end{itemize}}
+
+\usepackage{graphicx,color}
+\usepackage{colortbl}
+\definecolor{violet}{rgb}{.4,.1,.8}
+\newcommand{\szp}[1]{\textcolor{violet}{\bf {\small {SZP: #1}}}}
+
+\setlength\titlebox{2.25in}
+
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+
+\title{Metaphor Detection in a Poetry Corpus by Applying Statistical Methods}
+
+\author{
+Vaibhav Kesarwani, Diana Inkpen, Stan Szpakowicz \\
+Electrical Engineering \& Computer Science\\
+University of Ottawa \\
+Ottawa, Ontario, Canada \\
+{\tt vaibhavkw84@gmail.com,} \\
+{\tt diana.inkpen@uottawa.ca,} \\
+{\tt szpak@eecs.uottawa.ca} \\
+\And
+Chris Tanasescu \\
+English Language \& Literature \\
+Carleton University \\
+Ottawa, Ontario, Canada \\
+{\tt chris.tanasescu@carleton.ca} \\
+}
+
+%%%% comment out the next line to deanonymize
+\author{Anonymized for blind reviewing}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+%Metaphor is an indispensable component of poetry. It demonstrates the creativity of the poet and also assists in supplanting a phrase to enhance emotional and rhetoric devices. Previous metaphor detection methods rely either on rule based or statistical models and none of them applied to poetry. Our method tends to focus on metaphor detection in poetry corpus and combines rule based and statistical models (Word Embeddings) to develop a one-of-a-kind system.
+Metaphor is indispensable in poetry. It demonstrates the creativity of the poet and also \textbf{assists in enhancing emotional and rhetorical devices}. Previous metaphor detection methods rely either on rule-based or statistical models, none of them applied to poetry. Our method, focusing on metaphor detection in a poetry corpus, combines rule-based and statistical models (Word Embeddings) to develop a\textbf{ novel classification system}.
+% * <margento.official@gmail.com> 2017-02-09T06:38:59.944Z:
+% 
+% > system
+% we need a qualifier here, what kind of system, "analysis system" or "processing system" or...
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:38:41.038Z:
+% 
+% > one-of-a-kind
+% original OR novel
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:38:30.411Z:
+%
+% > system
+%
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:37:20.407Z:
+%
+% > one-of-a-kind
+%
+% ^.
+% * <vaibhavkw84@gmail.com> 2017-02-08T05:02:32.769Z:
+%
+% ^.
+
+\end{abstract}
+
+% - - - - - - - - - - - -
+\section{Introduction}
+% - - - - - - - - - - - -
+
+Metaphors are crucial to the understanding of any literary text. A metaphor deviates from the normal linguistic flow and intends to create a strong statement that\textbf{ no non-metaphoric text} can achieve. It is different than an idiom as it is possible to understand a metaphor even with no prior knowledge. Some examples of metaphors in poetry are:
+% * <vaibhavkw84@gmail.com> 2017-02-06T16:00:23.320Z:
+% 
+% corrected
+% 
+% ^.
+\begin{itemize}
+\item The hackles on my neck are fear
+\item My eyes are caves, chunks of etched rock
+% * <margento.official@gmail.com> 2017-02-09T06:14:31.641Z:
+% 
+% please insert citations
+% 
+% ^ <margento.official@gmail.com> 2017-02-09T06:15:19.759Z.
+\end{itemize}
+\textbf{The early works} on detecting metaphor in large text corpora were based on rules. Turney~\shortcite{Turney:11} proposed the Concrete-Abstract rule: a concrete concept, when used to describe an abstract one, \textbf{represents} a metaphor. A phrase like "Sweet Dreams" is one such example. We use the Abstract-Concrete rule as one of the many features in our model. In experimentation, it has in fact proved to be quite useful in case of poetry as well.
+% * <margento.official@gmail.com> 2017-02-09T06:30:45.038Z:
+% 
+% > it has in fact
+% where and when; are there NLP authors who dealt with metaphor in poetry before us?
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:29:27.579Z:
+% 
+% > depicts
+% represents OR constitutes
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:27:46.685Z:
+% 
+% >  
+% the
+% 
+% ^ <margento.official@gmail.com> 2017-02-09T06:28:45.770Z.
+% * <margento.official@gmail.com> 2017-02-09T06:25:52.185Z:
+% 
+% earliest work in computational analysis, right?  and do we know for a fact that's the earliest?
+% 
+% ^.
+
+Another of Turney's~\shortcite{Turney:11} rules, Concrete Category Overlap (CCO), states that if both of the noun heads of a phrase are concrete, we can apply CCO instead of Concrete-Abstract. \szp{a curcular definition} This is used as a feature in our model, but is applicable to a restricted set of cases. 
+% * <margento.official@gmail.com> 2017-02-09T06:33:37.501Z:
+% 
+% > a restricted set
+% restricted in what sense; please explain and/or exemplify
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:32:15.029Z:
+% 
+% > This is also used as a feature
+% we can't say "also" a feature when we haven't explicitly mentioned/enumerated any feature(s) yet
+% 
+% ^.
+
+Neuman~\shortcite{Neuman:13} proposes to categorize metaphor on the basis of POS tag sequences like Noun-Verb-Noun, Adjective-Noun, etc. We follow the same methodology to extract the set of sentences that may be possibly metaphorical in nature. \textbf{Our approach differs as we use WordEmbedding on Gigaword corpus to get word vector representations (vector difference and cosine similarity) of possible metaphorical word pairs.} Another difference is the addition of two more types of POS sequences that we encountered to be metaphorical in our Poetry Foundation poetry corpus.
+% * <margento.official@gmail.com> 2017-02-09T06:41:59.823Z:
+% 
+% > words
+% just words or phrases as well?
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:41:27.067Z:
+% 
+% > corpus
+% plural, "corpora" (it's two of them, rigght?)
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:41:14.438Z:
+% 
+% >  
+% the
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:36:03.837Z:
+% 
+% > differs:s
+% typo
+% 
+% ^.
+
+Neuman's~\shortcite{Neuman:13} statistical model uses Mutual Information and selectional preference approach. He suggests using this through a large-scale corpus to find the most frequently occurring concrete nouns with a specific noun. Any noun outside this small set denotes a metaphor. Our experimentation does not directly involve finding selectional preference sets but instead we use Word Embeddings.\textbf{ We find the selectional preference sets too limiting as word span is to be set before the experiments and some sentences exceed that limit, therefore the contextual meaning is lost.}
+
+Shutova's~\shortcite{Shutova:16} statistical model detects metaphor just like ours. But her work involves more of a verb-centered approach which acts as a seed set for training data. Our work focuses more on noun-centered models and looks more to the application to poetry, not generically. \textbf{We focus more on noun-centered models, as we observed that poetry contains more noun-centered metaphors than verb-centered.}  
+% * <margento.official@gmail.com> 2017-02-09T06:49:49.725Z:
+% 
+% > on noun-centered models
+% why?
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:49:36.291Z:
+% 
+% > to
+% in
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:43:45.059Z:
+% 
+% > the application
+% possible applications
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T06:43:32.565Z:
+% 
+% > to
+% into
+% 
+% ^.
+
+Our current work is a subset of a larger project named "GraphPoem" Margento~\shortcite{Lou:15} that involves the computational study of poetry and the development of tools that can aid the academic study of poetry.
+% * <margento.official@gmail.com> 2017-02-09T07:22:47.900Z:
+% 
+% > can
+% will
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T07:20:04.081Z:
+% 
+% > aid
+% contribute to 
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T07:11:38.421Z:
+% 
+% > subset
+% component OR section OR chapter
+% 
+% ^.
+
+% - - - - - - - - - - - -
+\section{The Method}
+% - - - - - - - - - - - -
+
+% - - - - - - - -
+\subsection{Building the Corpus}
+% - - - - - - - -
+
+We have built our own corpus, because there is no publicly available corpus on poetry annotated for metaphors. Annotating poetry line by line can be laborious \textbf{as we have observed empirically that negative samples are too many.} To ease this task, we applied Neuman's approach: segregate metaphor on the basis of their POS tag sequence. We extracted all sentences from 12830 Poetry Foundation poems that match these tag sequence. 
+% * <margento.official@gmail.com> 2017-02-09T07:30:00.494Z:
+% 
+% > metaphor
+% potential metaphors (right?)
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T07:28:21.630Z:
+% 
+% > segregate
+% do you mean "single out" or "extract" or "identify"?
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T07:27:44.833Z:
+% 
+% > sequence
+% plural, right?--"sequences" 
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T07:23:45.447Z:
+% 
+% > on the basis of
+% based on OR according to
+% 
+% ^.
+
+\textbf{Type I metaphor are POS tag sequence of Noun-Verb-Noun where the verb is copular. We extended this to include the tag sequence Noun-Verb-Det-Noun, since we found many cases were being skipped due to the presence of a determiner. Type II are tag sequence of Noun-Verb-Noun with a regular or non-copula verb. Type III are tag sequence of Adjective-Noun.}
+
+In this paper, we focus on Type I metaphor. Other types would be detected in our future work. \textbf{We will also implement a tag-sequence-independent approach that employs a dependency parser to give all associations in a sentence. Using some of the associations like nsubj, dobj, etc., we will filter down to get word pairs that need to be checked for metaphor occurrence. All the other irrelevant associations will be discarded.}
+% * <margento.official@gmail.com> 2017-02-09T07:31:15.755Z:
+% 
+% > such vagueness only annoys reviewers
+% Stan is probably right.  Please elaborate a bit.  Smth along the lines "In our future work we will [NOT "may"] do this and that trying to obtain or prove or accomplish this and that since [and here follows the argument or the rationale] etc"
+% 
+% ^.
+
+\textbf{Identifying head words in a sentence is in itself a very challenging task. In other words, it is like compressing a phrase to a word pair that may or may not be a metaphor. The POS tag sequence does not always provide a understandable word pair and critical words that may be of value, are lost.} For these cases, the nouns highlighted by the POS tagger are not enough to identify the head of a sentence (or phrase). Therefore, we employ Stanford NLP Parser~\cite{Marneffe:06} to identify them. \textbf{We extract all nsubj associations from the sentence and if the head word is different from the earlier identified head, then it is updated. }
+
+\begin{center}
+\begin{dependency}[theme = simple]
+   \begin{deptext}[column sep=1em]
+      the \& mind \& is \& a \& city \& like \& London\\
+   \end{deptext}
+   \depedge{2}{1}{det}
+   \depedge[edge start x offset=2pt]{5}{2}{nsubj}
+   \depedge{5}{3}{cop}
+   \depedge[edge start x offset=-6pt]{5}{4}{det}
+   \depedge{5}{7}{nmod:like}
+   \depedge[arc angle=50]{7}{6}{case}
+   
+\end{dependency}
+\end{center}
+
+% * <margento.official@gmail.com> 2017-02-09T07:37:21.194Z:
+% 
+% > if it \szp{it = what?} is
+% Yep, this sentence is really murky, let's rephrase and elaborate/explain.
+% 
+% ^.
+% * <margento.official@gmail.com> 2017-02-09T07:36:06.724Z:
+% 
+% > employ
+% deployed the
+% 
+% ^.
+
+% - - - - - - - -
+\subsection{Annotating the Corpus}
+\label{sec:annot}
+% - - - - - - - -
+
+We extracted around 1500 sentences with type I metaphor tag sequence and annotated the first 700. To annotate, we employed majority voting. First, two independent annotators annotate the 700 sentences without any communication. Then Kappa is calculated. Its value came to around 0.39 and percent agreement to 66.79. Later, we involved a third annotator who decides a majority vote in case of disagreement. If one of the two annotators agrees to the other's justification then the disagreement finishes without the intervention of the third annotator.
+
+While annotating, we encountered several sentences that were quite ambiguous and needed some more context to decide their inclination. In those specific cases, \szp{such exceptions look suspect} annotators were allowed to go back to the poem in which they occurred and find the context.  But in most cases, the sentence was enough to establish the metaphoric intent.
+
+All sentences given to the annotators were marked to indicate where the head of the sentence lies, so that there is no confusion in case that there are more than one noun phrases. \textbf{For example:}
+
+\textit{my eyes are caves , chunks of etched rock @2@}
+
+\textbf{In the above example, the number 2 denotes that the word at location 2  i.e. "eyes" is a head word and therefore the second head would be "caves", as this is a Type 1 metaphor tagged sentence. Since this is obviously a metaphoric word pair, therefore the annotator will have to write "y" at the end of the sentence.}
+
+\textbf{Further, the annotators were allowed to skip a sentence, in case of ambiguity or lack of context. Therefore, a sentence can be labeled as 'y' for metaphor, 'n' for non-metaphor and 's' for skipped sentence.  }
+
+\textbf{After annotating, we checked for the distribution of classes. Metaphor comprised 49.8\%, non-metaphor 44.8\% and skipped 5.4\%. We have an almost balanced dataset, so we do not apply any sampling in our classification.}
+
+% - - - - - - - -
+\subsection{Rule-based Metaphor Detection}
+\label{ssec:rules}
+% - - - - - - - -
+
+ Firstly, we use Rule-based methods for our poetry dataset. We use the Abstract-Concrete  and Concrete Category Overlap rules established by Turney~\shortcite{Turney:11}. Abstract-Concrete rule needs the hypernym class of each noun. Therefore we use WordNet~\shortcite{Fellbaum:98}. We get all hypernyms of head nouns and check for each parent till we reach the hypernym ``abstract entity" or ``physical entity". We use the first sense of WordNet as it is the most common usage \szp{how do you know?} of that word. 
+
+Apart from the above rules, we also used a ConceptNet~\cite{Speer:12} based feature. For each noun in our sentence, we extract the corresponding ``SurfaceText" from ConceptNet. SurfaceText contain some associations between the specific word and real-world knowledge. For example, ``car" gives the following associations:
+
+\begin{itemize}
+\item ``drive" is related to ``car"
+\item You are likely to find ``a car" in ``the city"
+\end{itemize}
+and so on.
+
+The entities are already highlighted in the SurfaceTexts. We parse these associations and extract all the entities. There can be action associations as well:
+\begin{itemize}
+\item ``a car" can ``crash"
+\item ``a car" can ``slow down"
+\end{itemize}
+and so on.
+
+These entities and actions are used to establish an overlap in the head nouns of our poetry sentences. We call this method ConceptNet Overlap.\textbf{ We denote true if there is an overlap and false if not and is used as one of the features in our rule-based model.} \szp{how can a method be a feature?!!}
+
+% - - - - - - - -
+\subsection{Statistical-based Metaphor Detection}
+% - - - - - - - -
+
+To capture the distortion of the context that a metaphor provides to a sentence, we use vector difference of the head words. The underlying idea is that the smaller the difference, the more connected the words would be. Conversely, a large difference implies disconnected words and hence a metaphor. We are capturing this difference in a 100-dimensional vector representation. We use difference of word vectors as the first statistical feature. 
+\begin{center}
+$\begin{bmatrix}a_1 \\a_2 \\.\\.\\a_n \end{bmatrix}-\begin{bmatrix}b_1 \\b_2 \\.\\.\\b_n \end{bmatrix}=
+\begin{bmatrix}c_1 \\c_2 \\.\\.\\c_n \end{bmatrix}$
+\end{center}
+\bigbreak
+
+\textbf{To get the word vectors of head words, we use a pre-trained Glove Gigaword corpus \cite{Pennington:14}. Earlier, we used a custom trained model based on British National Corpus \cite{BNC:07} but switched to Glove to test on a bigger corpus. Another reason we tested on two different corpora was to remove any bias that may percolate due to the presence of common speech metaphors in the corpus.} 
+
+
+We computed cosine similarity for all word vector pairs and included it as another feature for our model. We also use Pointwise Mutual Information of each word pair to capture the collocation information: 
+\begin{center}
+$ln\frac{C(x,y).N}{C(x)C(y)}$,
+\end{center}
+
+
+where N is the size of corpus, C(x,y) is the frequency of x and y together, C(x) and C(y) is frequency of x and y in corpus respectively. 
+
+
+% - - - - - - - - - - - -
+\section{The Results}
+% - - - - - - - - - - - -
+We tested on sentences that were extracted from 12830 Poetry Foundation poems and annotated manually. For training data, we used a combination of different datasets like Trofi\cite{TROFI:06} and Shutova's metaphor dataset~\cite{Mohammad:16} along with our own poetry dataset. We included other datasets with poetry to increase the training set and consequently to get better classification predictions.
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline \bf Experiments & \bf Precision & \bf Recall & \bf F-score \\ \hline
+Rules (CA+CCO+CN) & 0.615 & 0.507 & 0.555\\
+PoFo poetry data & 0.662 & 0.675 & 0.669\\
+Trofi data & 0.782 & 0.889 & 0.832\\
+Shutova data  & 0.763 & 0.725 & 0.744\\
+\hline PoFo + Trofi + Shutova  & 0.741 & 0.822 & 0.779\\
+\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Results for class ''metaphor'' }
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline \bf Experiments & \bf Precision & \bf Recall & \bf F-score \\ \hline
+Rules (CA+CCO+CN) & 0.462 & 0.408 & 0.433\\
+PoFo poetry data & 0.585 & 0.570 & 0.577\\
+Trofi data & 0.807 & 0.651 & 0.721\\
+Shutova data  & 0.749 & 0.785 & 0.767\\
+\hline PoFo + Trofi + Shutova  & 0.731 & 0.627 & 0.675\\
+\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Results for class ''non-metaphor'' }
+\end{table}
+
+Table 1 shows the class "metaphor" results. For rule based experiments, we included Concrete-Abstract, Conrete-Class-Overlap and ConceptNet features. Training was done on 340 PoFo (Poetry Foundation) poetry sentences and testing on other set of 340. For PoFo data, the train and test was the same, but with word vector feature set instead of rules. For Trofi data, training and testing was done on 1771 instances each with the same feature set as PoFo. For Shutova data, training was done on 323 instances and testing on other 323. Lastly, all the above datasets are aggregated to test on 487 PoFo sentences. Training for this aggregated set was done on 3543 Trofi instances, 647 Shutova instances and 193 PoFo instances.
+
+On analysis of results, it can be observed that overall best results are seen on Trofi data. But, on comparing PoFo results with the aggregate results, we can see that all the three metrics have drastically increased when the training data is large. Precision on isolated PoFo data is 0.662 whereas on aggregate data is 0.741. This also establishes that to detect metaphor in poetry, non-poetry data is as helpful as the poetry one.  
+
+It can be argued that the recall that we report is not the recall of metaphors in the whole poem but instead recall of the specific POS tag sequence that is extracted by our algorithm. There can be  sentences that are metaphoric in nature, but are missed due to a different POS tag sequence. We totally agree to this viewpoint, and for the same reason, we are working on the type independent metaphor identification algorithm to handle those missing cases. 
+
+For data preprocessing, we do attribute selection by various algorithms like Pearson's, Infogain, Gain ratio, etc.. We report results only for the highest accuracy among these algorithms. For classification, we use several classifiers like RandomForest, SVM, NaiveBayes, JRip, etc.. We report only the highest accuracy achieved on these classifiers. For results in table 1, RandomForest classifier was used and for attribute selection Gain ratio evaluator.
+
+Table 2 shows the results for class "non-metaphor". It is observed that though the precision of metaphor and non-metaphor classes are almost equal, recall of non-metaphor class is lower at 0.627 (it is 0.822 for class metaphor). On doing error analysis, it was seen that these "skipped" cases were mostly words that are archaic or poetic terms that do not have word vector representations. Still it is observed that statistical method scored better than the rule based methods for all metrics. 
+
+We also tested on 200 dimensional word vectors in order to investigate the impact of increasing the number of dimensions from 100 to 200 on accuracy metrics. Results showed that the accuracy dropped by 1\% along with a slight decline in other metrics as well. 
+
+% - - - - - - - - - - - -
+\section{Conclusions and Future Work}
+% - - - - - - - - - - - -
+
+Our preliminary results with Type 1 metaphor encourage us to work more and apply more methods in the future. We are already working on Type-independent metaphor identification to increase the recall of our analysis. For rule based methods, we may work on context overlap methods to remove the ambiguity between various senses that a word may possess and it may increase classification accuracy. 
+
+For statistical methods, there are many possibilities that we are looking into. Firstly, we are looking into applying phrase compositionality ~\cite{Mikolov:13} to handle multiword expressions and phrases better. Since we are identifying metaphors in word pairs rather than the whole sentence, therefore the accuracy of vector representation for these words are very crucial. If the word pair extracted by the algorithm does not represent the whole phrasal meaning, then obviously classification would be incorrect at later stages.   
+Secondly, we are looking into the application of deep learning classifiers like RNNs to further improve precision.      
+
+\begin{thebibliography}{}
+
+\bibitem [\protect\citename{Turney et al.}2011]{Turney:11}
+Turney P, Neuman Y, Assaf D, Cohen Y. 
+\newblock 2011.
+\newblock Literal and metaphorical sense identification through concrete and abstract context.
+\newblock In: Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing, Edinburgh, Scotland, UK, July 27–31: 680–690.
+
+\bibitem [\protect\citename{Marneffe et al.}2006]{Marneffe:06}
+Marie-Catherine de Marneffe, Bill MacCartney and Christopher D. Manning.
+\newblock 2006.
+\newblock Generating Typed Dependency Parses from Phrase Structure Parses.
+\newblock In LREC 2006.
+
+\bibitem [\protect\citename{Fellbaum}1998]{Fellbaum:98}
+Christiane Fellbaum.
+\newblock 1998.
+\newblock WordNet: An Electronic Lexical Database.
+\newblock W Cambridge, MA: MIT Press.
+
+\bibitem [\protect\citename{Neuman et al.}2013]{Neuman:13}
+Neuman Y, Assaf D, Cohen Y, Last M, Argamon S, Howard N, et al.
+\newblock 2013.
+\newblock Metaphor Identification in Large Texts Corpora.
+\newblock PloS one, 8(4), e62343.
+
+\bibitem [\protect\citename{Speer and Havasi}2012]{Speer:12}
+Robert Speer and Catherine Havasi.
+\newblock 2012.
+\newblock Representing General Relational Knowledge in ConceptNet 5.
+\newblock LREC 2012.
+
+\bibitem [\protect\citename{Mikolov et al.}2013]{Mikolov:13}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeff Dean.
+\newblock 2013.
+\newblock  Distributed representations of words and phrases and their compositionality.
+\newblock  In Advances in Neural Information Processing Systems 26, pages 3111–-3119.
+
+\bibitem [\protect\citename{Pennington et al.}2014]{Pennington:14}
+Pennington Jeffrey, Richard Socher, and Christopher D Manning.
+\newblock 2014.
+\newblock Glove: Global vectors for word representation.
+\newblock Proceedings of the Empiricial Methods in Natural Language Processing (EMNLP 2014) 12.
+
+\bibitem [\protect\citename{Margento}2015]{Lou:15}
+Lou A., Inkpen D. and Tanasescu C.
+\newblock 2015.
+\newblock Multilabel Subject-Based Classification of Poetry.
+\newblock Nature, 2218, 30-7.
+
+\bibitem [\protect\citename{BNC}2007]{BNC:07}
+The British National Corpus
+\newblock 2007.
+\newblock The British National Corpus, version 3 (BNC XML Edition).
+\newblock Distributed by Oxford University Computing Services on behalf of the BNC Consortium.
+
+\bibitem [\protect\citename{Birke and Sarkar}2006]{TROFI:06}
+Birke J. and Sarkar A. 
+\newblock 2006.
+\newblock A Clustering Approach for Nearly Unsupervised Recognition of Nonliteral Language.
+\newblock In EACL.
+
+\bibitem [\protect\citename{Birke and Sarkar}2006]{TROFI:07}
+Birke J. and Sarkar A. 
+\newblock 2007.
+\newblock Active learning for the identification of nonliteral language.
+\newblock In Proceedings of the Workshop on Computational Approaches to Figurative Language (pp. 21-28). Association for Computational Linguistics.
+
+\bibitem [\protect\citename{Mohammad et al.}2016]{Mohammad:16}
+Mohammad S. M., Shutova E. and Turney P. D.
+\newblock 2016.
+\newblock Metaphor as a medium for emotion: An empirical study.
+\newblock The* SEM 2016 Organizing Committee.
+
+\bibitem [\protect\citename{Shutova et al.}2016]{Shutova:16}
+Shutova E., Kiela D. and Maillard J.
+\newblock 2016.
+\newblock Black holes and white rabbits: Metaphor identification with visual features.
+\newblock In Proc. of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (pp. 160-170).
+
+
+
+
+\end{thebibliography}
+\end{document}

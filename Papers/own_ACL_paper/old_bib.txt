@@ -1,0 +1,81 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect\citename{Turney et al.}2011]{Turney:11}
+Turney P, Neuman Y, Assaf D, Cohen Y. 
+\newblock 2011.
+\newblock Literal and metaphorical sense identification through concrete and abstract context.
+\newblock Proc. 2011 Conference on Empirical Methods in Natural Language Processing, Edinburgh, Scotland, UK, July 27–31: 680–690.
+
+\bibitem [\protect\citename{Marneffe et al.}2006]{Marneffe:06}
+Marie-Catherine de Marneffe, Bill MacCartney and Christopher D. Manning.
+\newblock 2006.
+\newblock Generating Typed Dependency Parses from Phrase Structure Parses.
+\newblock LREC 2006.
+
+\bibitem [\protect\citename{Fellbaum}1998]{Fellbaum:98}
+Christiane Fellbaum.
+\newblock 1998.
+\newblock WordNet: An Electronic Lexical Database.
+\newblock W Cambridge, MA: MIT Press.
+
+\bibitem [\protect\citename{Neuman et al.}2013]{Neuman:13}
+Neuman Y, Assaf D, Cohen Y, Last M, Argamon S, Howard N, et al.
+\newblock 2013.
+\newblock Metaphor Identification in Large Texts Corpora.
+\newblock PloS one, 8(4), e62343.
+
+\bibitem [\protect\citename{Speer and Havasi}2012]{Speer:12}
+Robert Speer and Catherine Havasi.
+\newblock 2012.
+\newblock Representing General Relational Knowledge in ConceptNet 5.
+\newblock LREC 2012.
+
+\bibitem [\protect\citename{Mikolov et al.}2013]{Mikolov:13}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeff Dean.
+\newblock 2013.
+\newblock Distributed representations of words and phrases and their compositionality.
+\newblock Advances in Neural Information Processing Systems 26, pages 3111–-3119.
+
+\bibitem [\protect\citename{Pennington et al.}2014]{Pennington:14}
+Pennington Jeffrey, Richard Socher, and Christopher D Manning.
+\newblock 2014.
+\newblock Glove: Global vectors for word representation.
+\newblock Proc. Empiricial Methods in Natural Language Processing (EMNLP 2014) 12.
+
+\bibitem [\protect\citename{Margento}2015]{Lou:15}
+Lou A., Inkpen D. and Tanasescu C.
+\newblock 2015.
+\newblock Multilabel Subject-Based Classification of Poetry.
+\newblock Nature, 2218, 30-7.
+
+\bibitem [\protect\citename{BNC}2007]{BNC:07}
+The British National Corpus
+\newblock 2007.
+\newblock The British National Corpus, version 3 (BNC XML Edition).
+\newblock Distributed by Oxford University Computing Services on behalf of the BNC Consortium.
+
+\bibitem [\protect\citename{Birke and Sarkar}2006]{TROFI:06}
+Birke J. and Sarkar A. 
+\newblock 2006.
+\newblock A Clustering Approach for Nearly Unsupervised Recognition of Nonliteral Language.
+\newblock In EACL.
+
+\bibitem [\protect\citename{Birke and Sarkar}2006]{TROFI:07}
+Birke J. and Sarkar A. 
+\newblock 2007.
+\newblock Active learning for the identification of nonliteral language.
+\newblock Proc. Workshop on Computational Approaches to Figurative Language (pp. 21-28). Association for Computational Linguistics.
+
+\bibitem [\protect\citename{Mohammad et al.}2016]{Mohammad:16}
+Mohammad S. M., Shutova E. and Turney P. D.
+\newblock 2016.
+\newblock Metaphor as a medium for emotion: An empirical study.
+\newblock The *SEM 2016 Organizing Committee.
+
+\bibitem [\protect\citename{Shutova et al.}2016]{Shutova:16}
+Shutova E., Kiela D. and Maillard J.
+\newblock 2016.
+\newblock Black holes and white rabbits: Metaphor identification with visual features.
+\newblock Proc. 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (pp. 160-170).
+
+\end{thebibliography}

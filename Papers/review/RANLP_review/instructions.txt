@@ -1,0 +1,127 @@
+========================================================================
+Plaintext Review Forms - Instructions
+========================================================================
+
+Please complete your review using the following guidelines for the 
+scored categories.
+
+To what extent is the paper relevant to the conference?
+(1-4)
+----------------------------------------------------------
+
+4 = Very well
+3 = Moderately
+2 = Marginally
+1 = Not at all
+
+Originality of the work (1-4)
+(1-4)
+-----------------------------------
+
+4 = Very original
+3 = Moderately original
+2 = Derivative
+1 = Very derivative
+
+Technical accuracy (1-4) (1-4)
+------------------------------
+
+4 = Accurate
+3 = Minor errors
+2 = Major errors
+1 = Invalid
+
+Reference to previous/related research (1-5)
+(1-5)
+--------------------------------------------------
+
+5 = Very good
+4 = Good
+3 = To a certain extent
+2 = Insufficient
+1 = Poor
+
+Presentation (clarity of aims and ideas and overall organisation)
+(1-3) (1-3)
+----------------------------------------------------------
+
+3 = good
+2 = average
+1 = poor
+
+English (1-3) (1-3)
+-------------------
+
+3 = good
+2 = average
+1 = poor
+
+Acceptance (1-6) (1-6)
+----------------------
+
+6 = accept
+5 = probably accept
+4 = accept only after modification
+3 = marginal
+2 = probably reject
+1 = reject
+
+Confidence (1-4) (1-4)
+----------------------
+
+4 = confident
+3 = fairly confident
+2 = somewhat uncertain
+1 = uncertain
+This information will not be communicated to the authors of papers.
+
+Recommend this paper for the "Outstanding young reseacher" award
+(1-3) (1-3)
+----------------------------------------------------------
+
+3 = Yes, I regard the paper as of very high quality, as outstanding or near
+to outstanding
+2 = May be, the paper is very good but not 'outstanding'
+1 = No
+You do not have to tick this box if you know the age of the author and know
+that he/she is not eligible as 'young researcher' (young researchers are
+considered authors who are not older than 35) This information will not be
+communicated to the authors of papers.
+
+
+FORMATTING GUIDELINES
+---------------------
+
+Enter only plain ASCII text on these forms.  Use a text editor which 
+can handle files in plain ASCII, without adding hidden formatting 
+characters.  
+
+Do not let the text automatically "wrap" around over an 80-column
+viewing area.  Rather, make sure you insert a linefeed at the end of
+each line.
+
+Paragraphs should be separated by two linefeeds (like the text in 
+these instructions).
+
+Remember that your textual comments will also be presented in HTML
+form.  START will attempt to preserve the "flow" of your original
+ASCII content in HTML (e.g., to preserve itemized lists, enumeration,
+etc.).  But the narrative sections will be filled, i.e., the content
+will be resized to fit the browser window.
+
+That said, you may want to include multi-line formulas, tables, or
+matrices in your review - where the alignment and spacing of the data
+needs to be preserved as entered, even when rendered in HTML.  To
+accomplish this, you can include "<pre>" contexts in your textual
+comments, in which case the enclosed data will be displayed as it was
+entered.  For example:
+
+   <pre>
+   7   5  11
+   0   0   1
+   1   0   1                   
+   </pre>
+
+If you do use this feature, do not forget the closing "</pre>" tag, 
+at the end of the pre-formatted text. And in general, only use 
+<pre>-style formatting when it's absolutely necessary to do so.

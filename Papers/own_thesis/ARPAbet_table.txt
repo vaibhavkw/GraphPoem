@@ -1,0 +1,48 @@
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline 
+\bf Phoneme	&\bf Example	&\bf Translation \\ \hline
+AA & odd & AA D \\ \hline
+AE & at & AE T \\ \hline
+AH & hut & HH AH T \\ \hline
+AO & ought & AO T \\ \hline
+AW & cow & K AW \\ \hline
+AY & hide & HH AY D \\ \hline
+B  & be & B IY \\ \hline
+CH & cheese & CH IY Z \\ \hline
+D  & dee & D IY \\ \hline
+DH & thee & DH IY \\ \hline
+EH & Ed & EH D \\ \hline
+ER & hurt & HH ER T \\ \hline
+EY & ate & EY T \\ \hline
+F  & fee & F IY \\ \hline
+G  & green & G R IY N \\ \hline
+HH & he & HH IY \\ \hline
+IH & it & IH T \\ \hline
+IY & eat & IY T \\ \hline
+JH & gee & JH IY \\ \hline
+K  & key & K IY \\ \hline
+L  & lee & L IY \\ \hline
+M  & me & M IY \\ \hline
+N  & knee & N IY \\ \hline
+NG & ping & P IH NG \\ \hline
+OW & oat & OW T \\ \hline
+OY & toy & T OY \\ \hline
+P  & pee & P IY \\ \hline
+R  & read & R IY D \\ \hline
+S  & sea & S IY \\ \hline
+SH & she & SH IY \\ \hline
+T  & tea & T IY \\ \hline
+TH & theta & TH EY T AH \\ \hline
+UH & hood & HH UH D \\ \hline
+UW & two & T UW \\ \hline
+V  & vee & V IY \\ \hline
+W  & we & W IY \\ \hline
+Y  & yield & Y IY L D \\ \hline
+Z  & zee & Z IY \\ \hline
+ZH & seizure & S IY ZH ER \\ \hline
+\end{tabular}
+\end{center}
+\caption{\label{phoneme-set} ARPAbet phoneme set. }
+\end{table}

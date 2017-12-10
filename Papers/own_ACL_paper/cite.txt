@@ -1,0 +1,15 @@
+~\shortcite{Lou:15}
+~\shortcite{Pennington:14}
+~\shortcite{Mikolov:13}
+~\shortcite{Speer:12}
+~\shortcite{Neuman:13}
+~\shortcite{Fellbaum:98}
+~\shortcite{Marneffe:06}
+~\shortcite{Turney:11}
+~\shhortcite{BNC:07}
+~\shhortcite{Mohammad:16}
+~\shhortcite{Shutova:16}
+
+
+\cite{Pennington:14}
+\cite{BNC:07}

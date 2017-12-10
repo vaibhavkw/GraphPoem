@@ -1,0 +1,206 @@
+========================================================================
+Review Form - Submission #1081
+=======================================DZE3CTX9=1081====================
+
+Title: Sentiment Expression Boundaries in Sentiment
+       Polarity Classification  
+
+Submission type: Short paper (up to 4 pages + 2 pages of references)  
+
+Subject Area: Sentiment Analysis And Opinion Mining 
+
+-------------------------------------------------------------------------
+SECONDARY REVIEWER
+-------------------------------------------------------------------------
+
+If you used a secondary reviewer to help with this review, and you wish 
+to give credit to this person, enter his/her name after the colon (:) sign 
+below.  If no secondary reviewer was used, leave the field blank.  
+
+  Secondary Reviewer: Vaibhav Kesarwani
+
+                                         =7XD3914=SecondaryRev===========
+
+
+-------------------------------------------------------------------------
+SCORED EVALUATION
+-------------------------------------------------------------------------
+
+
+
+     ====================================================================
+     Appropriateness
+     =================================================9YEDC25=S=1========
+
+     Insert your evaluation directly following the colon (:) sign. 
+     Please select an INTEGER (whole-number) score from within the 
+     range specified. 
+
+     The form has been initialized with the minimum score as a default.
+     Replace this default with your own evaluation.
+
+     Appropriateness (1 - 5): 4
+
+     =7XD3914=S=1
+
+     ====================================================================
+     Clarity
+     =================================================9YEDC25=S=2========
+
+     Clarity (1 - 5): 4
+
+     =7XD3914=S=2
+
+     ====================================================================
+     Originality
+     =================================================9YEDC25=S=3========
+
+     Originality (1 - 5): 3
+
+     =7XD3914=S=3
+
+     ====================================================================
+     Soundness / Correctness
+     =================================================9YEDC25=S=4========
+
+     Soundness / Correctness (1 - 5): 5
+
+     =7XD3914=S=4
+
+     ====================================================================
+     Meaningful Comparison
+     =================================================9YEDC25=S=5========
+
+     Meaningful Comparison (1 - 5): 3
+
+     =7XD3914=S=5
+
+     ====================================================================
+     Substance
+     =================================================9YEDC25=S=6========
+
+     Substance (1 - 5): 3
+
+     =7XD3914=S=6
+
+     ====================================================================
+     Impact of Ideas / Results
+     =================================================9YEDC25=S=7========
+
+     Impact of Ideas / Results (1 - 5): 3
+
+     =7XD3914=S=7
+
+     ====================================================================
+     Impact of Accompanying Software
+     =================================================9YEDC25=S=8========
+
+     Impact of Accompanying Software (1 - 5): 1
+
+     =7XD3914=S=8
+
+     ====================================================================
+     Impact of Accompanying Dataset / Resource
+     =================================================9YEDC25=S=9========
+
+     Impact of Accompanying Dataset / Resource (1 - 5): 3
+
+     =7XD3914=S=9
+
+     ====================================================================
+     Recommendation
+     =================================================9YEDC25=S=10=======
+
+     Recommendation (1 - 5): 3
+
+     =7XD3914=S=10
+
+     ====================================================================
+     Reviewer Confidence
+     =================================================9YEDC25=S=11=======
+
+     Reviewer Confidence (1 - 5): 4
+
+     =7XD3914=S=11
+
+     ====================================================================
+     Presentation Format
+     =================================================9YEDC25=S=12=======
+
+     Place an 'x' mark in the box next to your selection for this category.  
+
+     =X=0   [ ]: Oral Presentation
+     =X=1   [x]: Poster
+
+
+     =7XD3914=S=12
+
+     ====================================================================
+     Recommendation for Best Paper
+     =================================================9YEDC25=S=13=======
+
+     Place an 'x' mark in the box next to your selection for this category.  
+
+     =X=0   [x]: Definitely not
+     =X=1   [ ]: Maybe
+     =X=2   [ ]: Definitely
+
+
+     =7XD3914=S=13
+
+     ====================================================================
+     Recommendation for Best Data Set or Resource
+     =================================================9YEDC25=S=14=======
+
+     Place an 'x' mark in the box next to your selection for this category.  
+
+     =X=0   [x]: Definitely not
+     =X=1   [ ]: Maybe
+     =X=2   [ ]: Definitely
+
+
+     =7XD3914=S=14
+
+-------------------------------------------------------------------------
+DETAILED COMMENTS
+-------------------------------------------------------------------------
+
+Please supply detailed comments to back up your rankings. These comments 
+will be forwarded to the authors of the submission.
+
+Enter your comments after the "Start" boundary line. Use as many lines
+as you need, but make sure that the "End" boundary marker directly follows 
+the last line of your detailed comments.
+
+=Start==============================================9YEDC25=comments=====
+Just one related work is provided. There have been many developments in sentiment polarity classification that should be discussed.
+There should be some comparison with previous works in results as well to get comparative analysis. Information on hyper-parameters (Table 2) is good and well explained. There are very few references, should be increased. Your manually annotated corpus should also be tested on some other method (other than LSTM) for comparison.
+=End================================================7XD3914=comments=====
+
+
+
+
+-------------------------------------------------------------------------
+CONFIDENTIAL COMMENTS FOR COMMITTEE
+-------------------------------------------------------------------------
+
+You may wish to withhold some comments from the authors, and include 
+them solely for the committee's internal use.  You may enter your
+confidential comments in the area below (using as many lines as you
+need). If you don't have confidential comments for this submission,
+leave the area blank.
+
+
+=Start==========================================9YEDC25=confComments=====
+
+
+
+
+=End============================================7XD3914=confComments=====
+
+
+
+
+========================================================================
+End Review Form - Submission #1081
+=======================================CX39VB8D=1081====================
