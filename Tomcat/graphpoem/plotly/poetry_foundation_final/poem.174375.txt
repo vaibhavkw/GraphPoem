@@ -1,0 +1,18 @@
+
+Title : Sonnet 130: My mistress' eyes are nothing like the sun <br>
+Author : William Shakespeare <br><br>
+
+My mistress' eyes are nothing like the <mark3>sun;</mark3><br>
+Coral is far more red than her lips' <mark3>red;</mark3><br>
+If snow be white, why then her breasts are <mark3>dun;</mark3><br>
+If hairs be wires, black wires grow on her <mark3>head.</mark3><br>
+I have seen roses damasked, red and <mark3>white,</mark3><br>
+But no such roses see I in her <mark3>cheeks;</mark3><br>
+And in some perfumes is there more <mark3>delight</mark3><br>
+Than in the breath that from my mistress <mark3>reeks.</mark3><br>
+I love to hear her speak, yet well I <mark3>know</mark3><br>
+That music hath a far more pleasing <mark4>sound;</mark4><br>
+I grant I never saw a goddess <mark3>go;</mark3><br>
+My mistress, when she walks, treads on the <mark3>ground.</mark3><br>
+And yet, by heaven, I think my love as <mark3>rare</mark3><br>
+As any she belied with false <mark3>compare.</mark3><br>

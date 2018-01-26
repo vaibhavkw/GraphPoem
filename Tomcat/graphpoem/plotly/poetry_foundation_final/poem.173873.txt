@@ -1,0 +1,9 @@
+
+Title : There was an Old Man of Thermopylae <br>
+Author : Edward Lear <br><br>
+
+<br>
+There was an old man of <mark1>Thermopylae,</mark1><br>
+Who never did anything properly;<br>
+But they said, "If you <mark3>choose</mark3>, To boil eggs in your <mark3>shoes,</mark3><br>
+You shall never remain in <mark1>Thermopylae."</mark1><br>

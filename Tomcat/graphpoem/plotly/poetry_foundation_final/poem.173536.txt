@@ -1,0 +1,27 @@
+
+Title : The Road Not Taken <br>
+Author : Robert Frost <br><br>
+
+Two roads diverged in a yellow <mark3>wood,</mark3><br>
+And sorry I could not travel <mark4>both</mark4><br>
+And be one traveler, long I <mark3>stood</mark3><br>
+And looked down one as far as I <mark3>could</mark3><br>
+To where it bent in the <mark4>undergrowth;</mark4><br>
+<br>
+Then took the other, as just as <mark3>fair,</mark3><br>
+And having perhaps the better <mark3>claim,</mark3><br>
+Because it was grassy and wanted <mark3>wear;</mark3><br>
+Though as for that the passing <mark3>there</mark3><br>
+Had worn them really about the <mark3>same,</mark3><br>
+<br>
+And both that morning equally <mark3>lay</mark3><br>
+In leaves no step had trodden <mark3>black.</mark3><br>
+Oh, I kept the first for another <mark3>day!</mark3><br>
+Yet knowing how way leads on to <mark3>way,</mark3><br>
+I doubted if I should ever come <mark3>back.</mark3><br>
+<br>
+I shall be telling this with a <mark3>sigh</mark3><br>
+Somewhere ages and ages <mark4>hence:</mark4><br>
+Two roads diverged in a wood, and <mark3>I--</mark3><br>
+I took the one less traveled <mark3>by,</mark3><br>
+And that has made all the <mark4>difference.</mark4><br>

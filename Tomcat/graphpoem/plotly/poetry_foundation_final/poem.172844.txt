@@ -1,0 +1,44 @@
+
+Title : Dover Beach <br>
+Author : Matthew Arnold <br><br>
+
+The sea is calm <mark3>tonight.</mark3><br>
+The tide is full, the moon lies <mark3>fair</mark3><br>
+Upon the straits; on the French coast the <mark3>light</mark3><br>
+Gleams and is gone; the cliffs of England <mark3>stand,</mark3><br>
+Glimmering and vast, out in the tranquil <mark3>bay.</mark3><br>
+Come to the window, sweet is the <mark3>night-air!</mark3><br>
+Only, from the long line of <mark3>spray</mark3><br>
+Where the sea meets the moon-blanched <mark3>land,</mark3><br>
+Listen! you hear the grating <mark4>roar</mark4><br>
+Of pebbles which the waves draw back, and <mark3>fling,</mark3><br>
+At their return, up the high <mark3>strand,</mark3><br>
+Begin, and cease, and then again <mark3>begin,</mark3><br>
+With tremulous cadence slow, and <mark3>bring</mark3><br>
+The eternal note of sadness <mark3>in.</mark3><br>
+<br>
+Sophocles long <mark3>ago</mark3><br>
+Heard it on the AEgean, and it <mark4>brought</mark4><br>
+Into his mind the turbid ebb and <mark3>flow</mark3><br>
+Of human misery; <mark3>we</mark3><br>
+Find also in the sound a <mark3>thought,</mark3><br>
+Hearing it by this distant northern <mark3>sea.</mark3><br>
+<br>
+The Sea of <mark4>Faith</mark4><br>
+Was once, too, at the full, and round earth's <mark3>shore</mark3><br>
+Lay like the folds of a bright girdle furled. <br>
+But now I only <mark4>hear</mark4><br>
+Its melancholy, long, withdrawing <mark1>roar,</mark1><br>
+Retreating, to the <mark4>breath</mark4><br>
+Of the night-wind, down the vast edges <mark5>drear</mark5><br>
+And naked shingles of the <mark4>world.</mark4><br>
+<br>
+Ah, love, let us be <mark3>true</mark3><br>
+To one another! for the world, which <mark3>seems</mark3><br>
+To lie before us like a land of <mark3>dreams,</mark3><br>
+So various, so beautiful, so <mark3>new,</mark3><br>
+Hath really neither joy, nor love, nor <mark1>light,</mark1><br>
+Nor certitude, nor peace, nor help for <mark4>pain;</mark4><br>
+And we are here as on a darkling <mark3>plain</mark3><br>
+Swept with confused alarms of struggle and <mark3>flight,</mark3><br>
+Where ignorant armies clash by <mark3>night.</mark3><br>

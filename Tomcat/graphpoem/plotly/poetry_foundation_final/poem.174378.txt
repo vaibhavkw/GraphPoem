@@ -1,0 +1,44 @@
+
+Title : Song: "When daisies pied and violets blue" <br>
+Author : William Shakespeare <br><br>
+
+(from Love's Labors <mark4>Lost)</mark4><br>
+When daisies pied and violets <mark3>blue</mark3><br>
+And lady-smocks all <mark4>silver-white</mark4><br>
+And cuckoo-buds of yellow <mark3>hue</mark3><br>
+Do paint the meadows with <mark3>delight,</mark3><br>
+The cuckoo then, on every <mark3>tree,</mark3><br>
+Mocks married men; for thus sings <mark3>he:</mark3><br>
+<br>
+Cuckoo, cuckoo!" O, word of <mark3>fear,</mark3><br>
+Unpleasing to a married <mark3>ear!</mark3><br>
+<br>
+When shepherds pipe on oaten <mark3>straws,</mark3><br>
+      And merry larks are ploughmen's clocks, <br>
+When turtles tread, and rooks, and <mark3>daws,</mark3><br>
+      And maidens bleach their summer smocks, <br>
+The cuckoo then, on every <mark1>tree,</mark1><br>
+Mocks married men; for thus sings <mark1>he,</mark1><br>
+<br>
+Cuckoo, cuckoo!" O, word of <mark1>fear,</mark1><br>
+Unpleasing to a married <mark1>ear!</mark1><br>
+<br>
+When icicles hang by the <mark4>wall,</mark4><br>
+And Dick the shepherd blows his <mark4>nail,</mark4><br>
+And Tom bears logs into the <mark4>hall,</mark4><br>
+And milk comes frozen home in <mark4>pail,</mark4><br>
+When blood is nipp'd, and ways be <mark4>foul,</mark4><br>
+Then nightly sings the <mark3>staring-owl,</mark3><br>
+<br>
+<mark4>Tu-whit</mark4>, tu-who!"--a merry <mark4>note,</mark4><br>
+While greasy Joan doth keel the <mark4>pot.</mark4><br>
+<br>
+When all aloud the wind doth <mark3>blow,</mark3><br>
+      And coughing drowns the parson's saw, <br>
+And birds sit brooding in the <mark3>snow,</mark3><br>
+      And Marian's nose looks red and raw, <br>
+When roasted crabs hiss in the <mark4>bowl,</mark4><br>
+Then nightly sings the staring <mark4>owl,</mark4><br>
+<br>
+<mark4>Tu-whit</mark4>, tu-who!"--a merry <mark1>note,</mark1><br>
+While greasy Joan doth keel the <mark1>pot.</mark1><br>

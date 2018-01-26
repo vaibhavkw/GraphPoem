@@ -1,0 +1,11 @@
+
+Title : The Eagle <br>
+Author : Alfred, Lord Tennyson <br><br>
+
+He clasps the crag with crooked <mark3>hands;</mark3><br>
+Close to the sun in lonely <mark3>lands,</mark3><br>
+Ring'd with the azure world, he <mark3>stands.</mark3><br>
+<br>
+The wrinkled sea beneath him <mark4>crawls;</mark4><br>
+He watches from his mountain <mark3>walls,</mark3><br>
+And like a thunderbolt he <mark3>falls.</mark3><br>

@@ -1,0 +1,31 @@
+
+Title : I Wandered Lonely as a Cloud <br>
+Author : William Wordsworth <br><br>
+
+I wandered lonely as a <mark3>cloud</mark3><br>
+That floats on high o'er vales and <mark4>hills,</mark4><br>
+When all at once I saw a <mark3>crowd,</mark3><br>
+A host, of golden <mark4>daffodils;</mark4><br>
+Beside the lake, beneath the <mark4>trees,</mark4><br>
+Fluttering and dancing in the <mark3>breeze.</mark3><br>
+<br>
+Continuous as the stars that <mark3>shine</mark3><br>
+And twinkle on the milky <mark3>way,</mark3><br>
+They stretched in never-ending <mark3>line</mark3><br>
+Along the margin of a <mark3>bay:</mark3><br>
+Ten thousand saw I at a <mark3>glance,</mark3><br>
+Tossing their heads in sprightly <mark3>dance.</mark3><br>
+<br>
+The waves beside them danced; but <mark3>they</mark3><br>
+Out-did the sparkling waves in glee: <br>
+A poet could not but be <mark3>gay,</mark3><br>
+In such a jocund company: <br>
+I gazed--and gazed--but little <mark3>thought</mark3><br>
+What wealth the show to me had <mark3>brought:</mark3><br>
+<br>
+For oft, when on my couch I <mark3>lie</mark3><br>
+In vacant or in pensive <mark4>mood,</mark4><br>
+They flash upon that inward <mark3>eye</mark3><br>
+Which is the bliss of <mark4>solitude;</mark4><br>
+And then my heart with pleasure <mark4>fills,</mark4><br>
+And dances with the <mark1>daffodils.</mark1><br>

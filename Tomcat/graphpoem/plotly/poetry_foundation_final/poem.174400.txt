@@ -1,0 +1,27 @@
+
+Title : Mutability ["The flower that smiles to-day"] <br>
+Author : Percy Bysshe Shelley <br><br>
+
+The flower that smiles <mark3>to-day</mark3><br>
+To-morrow <mark3>dies;</mark3><br>
+All that we wish to <mark3>stay</mark3><br>
+Tempts and then <mark3>flies.</mark3><br>
+What is this world's <mark3>delight?</mark3><br>
+Lightning that mocks the <mark3>night,</mark3><br>
+Brief even as <mark3>bright.</mark3><br>
+<br>
+Virtue, how frail it <mark4>is!</mark4><br>
+Friendship how <mark3>rare!</mark3><br>
+Love, how it sells poor bliss <br>
+For proud <mark3>despair!</mark3><br>
+But we, though soon they <mark3>fall,</mark3><br>
+Survive their joy, and <mark3>all</mark3><br>
+Which ours we <mark3>call.</mark3><br>
+<br>
+Whilst skies are blue and <mark1>bright,</mark1><br>
+Whilst flowers are <mark3>gay,</mark3><br>
+Whilst eyes that change ere <mark1>night</mark1><br>
+Make glad the <mark3>day;</mark3><br>
+Whilst yet the calm hours <mark3>creep,</mark3><br>
+Dream thou--and from thy <mark3>sleep</mark3><br>
+Then wake to <mark3>weep.</mark3><br>
