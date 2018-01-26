@@ -24,12 +24,12 @@ public class AbstractConcrete {
 	}
 
 	public void readInputFolderPoetryFoundation(){
-		String inputFolder = basePath + "lemma/";
+		String inputFolder = basePath + "lemma_subset/";
 		File inpFolder = new File(inputFolder);
 		File[] children = inpFolder.listFiles();
 		
 		WordNet obj = new WordNet();
-		File outFile = new File(basePath + "concrete_abstract.txt");
+		File outFile = new File(basePath + "concrete_abstract_sub.txt");
 		FileWriter fw = null;
 		BufferedWriter bw = null;
 		try{

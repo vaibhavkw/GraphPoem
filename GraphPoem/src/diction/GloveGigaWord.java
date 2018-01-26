@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Properties;
 
 public class GloveGigaWord {
@@ -145,7 +146,7 @@ public class GloveGigaWord {
 		}
 
 	}
-	
+
 	public void processLine2(String str){
 		String []arr = str.split(",");
 		String key = arr[0];
@@ -159,6 +160,54 @@ public class GloveGigaWord {
 		prop2.setProperty(noun2, val2);
 		saveProp2();
 		//prop.setProperty(key, value);
+	}
+
+	public String cosineSimilarity(String str1, String str2) {
+		double out = 0.0;
+		try{			
+			String []arr1 = str1.split(",");
+			String []arr2 = str2.split(",");
+			if(arr1.length == 1 || arr1.length == 0){
+				arr1 = getZeroArray();
+			}
+			if(arr2.length == 1 || arr2.length == 0){
+				arr2 = getZeroArray();
+			}
+			double dotProduct = 0.0;
+			double normA = 0.0;
+			double normB = 0.0;
+			for(int i=0;i<arr1.length;i++){
+				double val1 = Double.parseDouble(arr1[i]);
+				double val2 = Double.parseDouble(arr2[i]);
+				dotProduct += val1 * val2;
+				normA += Math.pow(val1, 2);
+				normB += Math.pow(val2, 2);
+				//retStr = retStr + diff + ",";
+				//System.out.println(val1 + "::" + val2 + "::" + diff);
+			}
+
+			out = dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
+		}catch(Exception e){			
+			System.out.println(str1 + "::" + str2);
+			e.printStackTrace();
+		}
+		return String.valueOf(out);
+	}
+
+	public String[] getZeroArray(){
+		String []retArr = new String[dimensions+1];
+		for(int i=0;i<dimensions+1;i++){
+			retArr[i] = "0";
+		}
+		return retArr;
+	}
+
+	public String[] getBlankArray(){
+		String []retArr = new String[dimensions+1];
+		for(int i=0;i<dimensions+1;i++){
+			retArr[i] = "?";
+		}
+		return retArr;
 	}
 
 }

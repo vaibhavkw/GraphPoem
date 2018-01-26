@@ -100,7 +100,7 @@ public class BNCCorpus {
 			countTerm = indexReader.totalTermFreq(term);
 			//long countTerm2 = indexReader.getSumTotalTermFreq("contents");
 
-			System.out.println("Frequency of \"" + searchQuery + "\" : " + countTerm);
+			//System.out.println("Frequency of \"" + searchQuery + "\" : " + countTerm);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -257,9 +257,9 @@ public class BNCCorpus {
 
 			Term term = new Term("content", searchQuery);
 			countTerm = indexReader.totalTermFreq(term);
-			System.out.println();
+			//System.out.println();
 
-			System.out.println("Frequency of \"" + searchQuery + "\" : " + countTerm);
+			//System.out.println("Frequency of \"" + searchQuery + "\" : " + countTerm);
 
 		} catch (Exception e) {
 			e.printStackTrace();

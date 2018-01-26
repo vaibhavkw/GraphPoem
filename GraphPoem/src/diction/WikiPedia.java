@@ -35,17 +35,17 @@ public class WikiPedia {
 	public static String wikiPath = "D:/study/graph_poem/Tools/Metaphor/Wikipedia/raw.en/raw/";
 
 	public static void main(String[] args) {
-		String query = "taste food";
+		String query = "E-Trade Financial";
 		WikiPedia obj = new WikiPedia();
 		//obj.readWikiFolder(query);
 		//obj.indexDirectory();
 		//obj.searchIndex(query);
 		//obj.searchIndexFast(query);
-		//obj.normalIOSearch(query);
+		obj.normalIOSearch(query);
 		//obj.buildBigramsWiki();
 		//obj.indexBigramsWikiDir();
 		//obj.searchBigramIndexFast(query);
-		obj.searchCompositeQuery(query);
+		//obj.searchCompositeQuery(query);
 	}
 	
 	public void searchCompositeQuery(String searchQuery){

@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -16,8 +15,8 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.document.TextField;
 import org.apache.lucene.document.Field.Store;
+import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
@@ -37,7 +36,7 @@ import org.apache.lucene.store.FSDirectory;
 
 
 public class LuceneTest {
-	public static String basePath = "D:/EclipseWorkSpace/GraphPoemConcordance/resources/";
+	public static String basePath = "D:/EclipseWorkSpace/GraphPoem/resources/concordance/";
 	
 	public static void main(String[] args) {
 		LuceneTest obj = new LuceneTest();
@@ -46,7 +45,8 @@ public class LuceneTest {
 		String query = "seas";
 		String enhancedQuery = obj.getEnhancedQuery(query);
 		//obj.search(enhancedQuery);
-		obj.searchAndHighLight(enhancedQuery);
+		StringBuffer sb = obj.searchAndHighLight(enhancedQuery);
+		writeToFile(sb);
 		//search("game~");
 	}
 
@@ -137,7 +137,7 @@ public class LuceneTest {
 		}               
 	}
 
-	public void searchAndHighLight(String searchQuery) {
+	public StringBuffer searchAndHighLight(String searchQuery) {
 		try{
 			QueryParser queryParser = new QueryParser("contents", new StandardAnalyzer());
 			Query query = queryParser.parse(searchQuery);
@@ -156,8 +156,8 @@ public class LuceneTest {
 			ScoreDoc scoreDocs[] = indexSearcher.search(query, 100000).scoreDocs;
 			int count = 0;
 			StringBuffer sb = new StringBuffer();
-			sb.append("Query : " + searchQuery + "\n");
-			sb.append("Total poems : " + scoreDocs.length + "\n");
+			//sb.append("Query : " + searchQuery + "\n");
+			sb.append("Total poems results : " + scoreDocs.length + "\n");
 			for (ScoreDoc scoreDoc : scoreDocs) {
 				count++;
 				Document document = indexSearcher.doc(scoreDoc.doc);
@@ -174,14 +174,16 @@ public class LuceneTest {
 					sb.append(strFragment + "\n");
 				}
 			}
-			writeToFile(sb);
+			//writeToFile(sb);
+			return sb;
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
+			return null;
 		} 
 	}
 	
-	public static void writeToFile(StringBuffer sb) throws Exception {
+	public static void writeToFile(StringBuffer sb){
 		try {
 			File file = new File(basePath + "results.html");
 
@@ -198,7 +200,7 @@ public class LuceneTest {
 			URI uri = new URI(basePath + "results.html");
 			java.awt.Desktop.getDesktop().browse(uri);
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
